@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="今池、吹上の浅煎りコーヒーが美味しいお店。コーヒーを通して人と人が繋がれる、そんなお店を目指しています。">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.ico">
+  <title>HAPUNACOFFEE</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/1e5decd275.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- 固定ヘッダー -->
+  <header class="Header-Wrapper">
+    <div class="Header-Logo">
+      <a href="#">
+        <img src="img/logo_img.jpeg" width="60px" height="60px">
+      </a>
+    </div>
+    <nav class="header-nav">
+      <ul class="pc-nav">
+        <li><a href="#Menu">MENU</a></li>
+        <li><a href="#Location">LOCATION</a></li>
+        <li><a href="#About">ABOUT</a></li>
+      </ul>
+    </nav>
+
+    <div class="sp-nav">
+      <span class="material-icons" id="open">menu</span>
+    </div>
+  </header>
+
+  <!-- スマートフォンマスクメニュー -->
+  <div class="overlay" id="mask">
+    <span class="material-icons" id="close">close</span>
+    <nav class="header-nav">
+      <ul>
+        <li id="overlay-menu"><a href="#Menu">MENU</a></li>
+        <li id="overlay-location"><a href="#Location">LOCATION</a></li>
+        <li id="overlay-about"><a href="#About">ABOUT</a></li>
+        <li>
+          <ul class="sp-sns-icons">
+            <li id="overlay-instagram"><a href="https://www.instagram.com/hapunacoffee/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- SNSリンク -->
+  <div id="sns-icons" class="sns-link">
+    <nav>
+      <ul>
+        <li><a href="https://www.instagram.com/hapunacoffee/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- メインコンテンツ -->
+  <div id="Main" class="Main">
+    <p>Good coffee connect peaple</p>
+  </div>
+
+  <div id="Menu" class="Menu">
+    <h1>MENU</h1>
+    <div class="Menu-Wrapper">
+      <h2>COFFEE</h2>
+      <ul>
+        <li>ドリップコーヒー (Hot/Iced)<br><p>Pour over coffee</p></li>
+        <li>カフェラテ (Hot/Iced)<br><p>Caffè e llatte</p></li>
+        <li>エスプレッソトニック (Iced)<br><p>Espresso tonic</p></li>
+      </ul>
+      <h2>OTHERS</h2>
+      <ul>
+        <li>西尾抹茶ラテ (Hot/Iced)<br><p>Nishio green tea llatte</p></li>
+        <li>西尾エスプレッソラテ (Hot/Iced)<br><p>Nishio green tea and espresso llatte</p></li>
+        <li>リンゴジュース<br><p>Apple juice</p></li>
+      </ul>
+      <h2>FOOD</h2>
+      <ul>
+        <li>バタートースト<br><p>Buttered Toast</p></li>
+        <li>チーズトースト<br><p>Cheese on Toast</p></li>
+        <li>ピザトースト<br><p>Pizza-Toast</p></li>
+        <li>ハニーバタートースト<br><p>Honey Butter Toast</p></li>
+        <li>ハニーチーズトースト<br><p>Honey Cheese Toast</p></li>
+      </ul>
+    </div>
+    <div class="Menu-Nav">
+      <p>ドリップコーヒーは福岡と京都のロースターさんで焙煎されたコーヒー豆からお選びいただけます。</p>
+      <p>その他、季節のメニューやパティスリーやベイカリーのメニューを取り扱わせていただくこともございます。</p>
+    </div>
+  </div>
+
+  <div id="Location" class="Location-Wrapper">
+    <h1>LOCATION</h1>
+
+    <div id="map"></div>
+
+    <div class="Loc-Nav">
+      <div class="Access-Nav">
+        <p class="Margin-Area">〒464-0850<br>愛知県名古屋市千種区今池3丁目17-8</p>
+        <p>今池駅9番出口より徒歩5分</p>
+        <p>駐車場 2台</p>
+      </div>
+      
+      <div class="Opening-Nav">
+        <p class="Margin-Area">平日(火曜定休)<br>7:30〜18:00(Lo 17:30)</p>
+        <p>休日<br>9:00〜18:30(Lo 18:00)</p>
+      </div>
+    </div>
+    <div class="Loc-Img">
+      <img src="img/inside-cafe2.jpg" class="Loc-Img1">
+      <img src="img/circle_sign.jpg" class="Loc-Img2">
+    </div>
+  </div>
+  
+  <div id="About" class="About">
+    <div class="Scroll-Box1">
+      <h1>ABOUT</h1>
+      <h2>COFFEE</h2>
+      <p>福岡と京都のロースターで焙煎されたコーヒー豆を使用しています。コーヒー豆本来の味を損なわないために浅煎りの焙煎をレンジとしております。</p>
+    </div>
+    <div class="Para-BG1"></div>
+    
+    <div class="Scroll-Box2">
+      <h2>CONCEPT</h2>
+      <p>福岡と京都のロースターで焙煎されたコーヒー豆を使用しています。コーヒー豆本来の味を損なわないために浅煎りの焙煎をレンジとしております。</p>
+    </div>
+    <div class="Para-BG2"></div>
+  </div>
+
+  <script>
+    function initMap() {
+        var latlng = new google.maps.LatLng( 35.16486825912395, 136.93599237607097 );
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: latlng
+        });
+        var marker = new google.maps.Marker({
+          position: latlng,
+          map: map
+        });
+      }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSrhiG2PywPcJ9ooUF__hEg-psqqD3McU&callback=initMap"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
