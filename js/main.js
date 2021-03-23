@@ -5,10 +5,12 @@
   const overlay = document.querySelector('.overlay');
   const close = document.getElementById('close');
   const mask = document.getElementById('mask');
-  const about = document.getElementById('overlay-about');
-  const works = document.getElementById('overlay-works');
-  const location = document.getElementById('overlay-location');
   const instagram = document.getElementById('overlay-instagram');
+  const Concept = document.getElementById('overlay-Concept');
+  const Menu = document.getElementById('overlay-Menu');
+  const Access = document.getElementById('overlay-Access');
+  const Gallery = document.getElementById('overlay-Gallery');
+  const Contact = document.getElementById('overlay-Contact');
 
   function overlayClose(link) {
     link.addEventListener('click', () => {
@@ -24,8 +26,29 @@
 
   overlayClose(close);
   overlayClose(mask);
-  overlayClose(about);
-  overlayClose(works);
-  overlayClose(location);
   overlayClose(instagram);
+  overlayClose(Concept);
+  overlayClose(Menu);
+  overlayClose(Access);
+  overlayClose(Gallery);
+  overlayClose(Contact);
+  
+  const menuItems = document.querySelectorAll('.Course-Menu li a');
+  const contents = document.querySelectorAll('.Content');
+
+  menuItems.forEach(clickedItem => {
+    clickedItem.addEventListener('click', e => {
+      e.preventDefault();
+
+      menuItems.forEach(item => {
+        item.classList.remove('Active');
+      });
+      clickedItem.classList.add('Active');
+
+      contents.forEach(content => {
+        content.classList.remove('Active');
+      });
+      document.getElementById(clickedItem.dataset.id).classList.add('Active');
+    });
+  });
 }

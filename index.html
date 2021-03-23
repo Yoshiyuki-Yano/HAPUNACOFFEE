@@ -1,149 +1,222 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+  <title>HAPUNACOFFEE</title>
   <meta charset="UTF-8">
   <meta name="description" content="今池、吹上の浅煎りコーヒーが美味しいお店。コーヒーを通して人と人が繋がれる、そんなお店を目指しています。">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="img/favicon.ico">
-  <title>HAPUNACOFFEE</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/1e5decd275.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <!-- 固定ヘッダー -->
+  <!-- ↓ここからヘッダー -->
   <header class="Header-Wrapper">
-    <div class="Header-Logo">
-      <a href="#">
-        <img src="img/logo_img.jpeg" width="60px" height="60px">
-      </a>
-    </div>
+    <a href="#" id="Header-Logo" class="Header-Logo">
+      <img src="img/logo_img.jpeg" width="60px" height="60px">
+      <div class="Header-Logo-Nav-Wrapper">
+        <h1 class="Header-Logo-Title">HAPUNA COFFEE</h1>
+        <p class="Header-Logo-Info">名古屋市千種区のカフェ</p>
+      </div>
+    </a>
     <nav class="header-nav">
       <ul class="pc-nav">
+        <li><a href="#Concept">CONCEPT</a></li>
         <li><a href="#Menu">MENU</a></li>
-        <li><a href="#Location">LOCATION</a></li>
-        <li><a href="#About">ABOUT</a></li>
+        <li><a href="#Access">ACCESS</a></li>
+        <li><a href="#Gallery">GALLERY</a></li>
+        <li><a href="#Contact">CONTACT</a></li>
       </ul>
     </nav>
-
     <div class="sp-nav">
       <span class="material-icons" id="open">menu</span>
     </div>
   </header>
+  <!-- ↑ここまでヘッダー -->
 
-  <!-- スマートフォンマスクメニュー -->
-  <div class="overlay" id="mask">
-    <span class="material-icons" id="close">close</span>
-    <nav class="header-nav">
-      <ul>
-        <li id="overlay-menu"><a href="#Menu">MENU</a></li>
-        <li id="overlay-location"><a href="#Location">LOCATION</a></li>
-        <li id="overlay-about"><a href="#About">ABOUT</a></li>
+  <!-- ↓ここからメイン -->
+  <main>
+    <!-- スマートフォンマスクメニュー -->
+    <div class="overlay" id="mask">
+      <span class="material-icons" id="close">close</span>
+      <nav>
+        <ul>
+          <li id="overlay-Concept"><a href="#Concept">CONCEPT</a></li>
+          <li id="overlay-Menu"><a href="#Menu">MENU</a></li>
+          <li id="overlay-Access"><a href="#Access">ACCESS</a></li>
+          <li id="overlay-Gallery"><a href="#Gallery">GALLERY</a></li>
+          <li id="overlay-Contact"><a href="#Contact">Contact</a></li>
+          <li>
+            <ul class="sp-sns-icons">
+              <li id="overlay-instagram"><a href="https://www.instagram.com/hapunacoffee/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
+              <li id="overlay-twitter"><a href="" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- TOP -->
+    <section id="Top" class="Top">
+      <p class="Top-Title">Good coffee connect peaple</p>
+    </section>
+    <!-- コンセプト -->
+    <section id="Concept" class="Concept">
+      <div class="Section-Title-BG">
+        <h1 class="Section-Title">CONCEPT</h1>
+      </div>
+      <div class="Concept-Wrapper">
+        <ul>
+          <li>
+            <div class="Photo Concept-Img1">
+              <div class="Box Box1 Odd-Box">
+                <p>Vision</p>
+              </div>
+            </div>
+            <div class="Txt Txt1 Odd-Txt">
+              <h1>Good coffee connect peaple</h1>
+              <p>当店は美味しいコーヒーを提供することでお客様のコミュニケーションのお手伝いができると信じています。コーヒーを一口飲んだあとに美味しいため息が自然と漏れる時間。お仕事や日々のゴタゴタを少しの間忘れてリラックスしませんか。当店は美味しいコーヒーを提供することでお客様のコミュニケーションのお手伝いができると信じています。コーヒーを一口飲んだあとに美味しいため息が自然と漏れる時間。お仕事や日々のゴタゴタを少しの間忘れてリラックスしませんか。</p>
+            </div>
+          </li>
+          <li>
+            <div class="Photo Concept-Img2">
+              <div class="Box Box2 Even-Box">
+                <p>Coffee</p>
+              </div>
+            </div>
+            <div class="Txt Txt2 Even-Txt">
+              <h1>Sophisticated specialty coffee</h1>
+              <p>当店は美味しいコーヒーを提供することでお客様のコミュニケーションのお手伝いができると信じています。コーヒーを一口飲んだあとに美味しいため息が自然と漏れる時間。お仕事や日々のゴタゴタを少しの間忘れてリラックスしませんか。当店は美味しいコーヒーを提供することでお客様のコミュニケーションのお手伝いができると信じています。コーヒーを一口飲んだあとに美味しいため息が自然と漏れる時間。お仕事や日々のゴタゴタを少しの間忘れてリラックスしませんか。</p>
+            </div>
+          </li>
+          <li>
+            <div class="Photo Concept-Img3">
+              <div class="Box Box3 Odd-Box">
+                <p>Brew</p>
+              </div>
+            </div>
+            <div class="Txt Txt3 Odd-Txt">
+              <h1>Pour over coffee and Espresso</h1>
+              <p>当店は美味しいコーヒーを提供することでお客様のコミュニケーションのお手伝いができると信じています。コーヒーを一口飲んだあとに美味しいため息が自然と漏れる時間。お仕事や日々のゴタゴタを少しの間忘れてリラックスしませんか。当店は美味しいコーヒーを提供することでお客様のコミュニケーションのお手伝いができると信じています。コーヒーを一口飲んだあとに美味しいため息が自然と漏れる時間。お仕事や日々のゴタゴタを少しの間忘れてリラックスしませんか。</p>
+            </div>
+          </li>
+          <li>
+            <div class="Photo Concept-Img4">
+              <div class="Box Box4 Even-Box">
+                <p>Foods</p>
+              </div>
+            </div>
+            <div class="Txt Txt4 Even-Txt">
+              <h1>Sweets and Bread</h1>
+              <p>当店は美味しいコーヒーを提供することでお客様のコミュニケーションのお手伝いができると信じています。コーヒーを一口飲んだあとに美味しいため息が自然と漏れる時間。お仕事や日々のゴタゴタを少しの間忘れてリラックスしませんか。当店は美味しいコーヒーを提供することでお客様のコミュニケーションのお手伝いができると信じています。コーヒーを一口飲んだあとに美味しいため息が自然と漏れる時間。お仕事や日々のゴタゴタを少しの間忘れてリラックスしませんか。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- メニュー -->
+    <section id="Menu" class="Menu">
+      <div class="Section-Title-BG">
+        <h1 class="Section-Title">MENU</h1>
+      </div>
+      <div class="Menu-Wrapper">
+        <h2>COFFEE</h2>
+        <ul>
+          <li>ドリップコーヒー (Hot/Iced)<br><p>Pour over coffee</p></li>
+          <li>カフェラテ (Hot/Iced)<br><p>Caffè e llatte</p></li>
+          <li>エスプレッソトニック (Iced)<br><p>Espresso tonic</p></li>
+        </ul>
+        <h2>OTHERS</h2>
+        <ul>
+          <li>西尾抹茶ラテ (Hot/Iced)<br><p>Nishio green tea llatte</p></li>
+          <li>西尾エスプレッソラテ (Hot/Iced)<br><p>Nishio green tea and espresso llatte</p></li>
+          <li>リンゴジュース<br><p>Apple juice</p></li>
+        </ul>
+        <h2>FOOD</h2>
+        <ul>
+          <li>バタートースト<br><p>Buttered Toast</p></li>
+          <li>チーズトースト<br><p>Cheese on Toast</p></li>
+          <li>ピザトースト<br><p>Pizza-Toast</p></li>
+          <li>ハニーバタートースト<br><p>Honey Butter Toast</p></li>
+          <li>ハニーチーズトースト<br><p>Honey Cheese Toast</p></li>
+        </ul>
+      </div>
+      <div class="Menu-Nav">
+        <p>ドリップコーヒーは福岡と京都のロースターさんで焙煎されたコーヒー豆からお選びいただけます。</p>
+        <p>その他季節のメニューや、パティスリーやベイカリーとのコラボメニューを取り扱っております。</p>
+      </div>
+    </section>
+    <!-- アクセス -->
+    <section id="Access" class="Access">
+      <div class="Section-Title-BG">
+        <h1 class="Section-Title">ACCESS</h1>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13046.678531465439!2d136.9359894!3d35.1648591!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2787cef17742d1de!2shapuna%20coffee!5e0!3m2!1sja!2sjp!4v1616142989305!5m2!1sja!2sjp" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="Access-Wrapper">
+        <div class="Loc-Nav">
+          <div class="Access-Nav">
+            <p>愛知県名古屋市千種区今池3丁目17-8</p>
+            <p>今池駅9番出口より徒歩5分</p>
+          </div>
+    
+          <div class="Opening-Nav">
+            <p>Open 8:30〜18:30</p>
+            <p>Close 火曜日</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ギャラリー -->
+    <section id="Gallery" class="Gallery">
+    <div class="Section-Title-BG">
+      <h1 class="Section-Title">GALLERY</h1>
+    </div>
+    <img width="800px" src="img/latte1.jpg">
+    <img width="800px" src="img/latte1.jpg">
+    <img width="800px" src="img/latte1.jpg">
+  </section>
+  <!-- コンタクト -->
+  <section id="Contact" class="Contact">
+    <div class="Section-Title-BG">
+      <h1 class="Section-Title">CONTACT</h1>
+    </div>
+    </section>
+  </main>
+  <!-- ↑ここまでメイン -->
+  
+  <!-- ↓ここからフッター -->
+  <!-- フッター -->
+  <footer class="footer-BG">
+    <div class="Footer-Wrapper">
+      <h1>取り扱い商品の提供元店様</h1>
+      <ul class="Footer-Links">
+        <li><a href="https://origami-kai.com">ORIGAMI JAPAN</a></li>
+        <li><a href="https://instagram.com/coffeecounty?igshid=hvpxykbzav27">COFFEE COUNTY</a></li>
+        <li><a href="https://www.stylecoffee.jp/">STYLE COFFEE</a></li>
+        <li><a href="https://instagram.com/miyabi1011?igshid=gi39mz90zi01">聖パン 雅</a></li>
+        <li><a href="https://instagram.com/cake.an_?igshid=1vozb59cv7fwb">an</a></li>
+      </ul>
+      <div class="Footer-Nav">
+        <ul class="footer-sns-icons">
+          <li>
+            <a href="https://www.instagram.com/hapunacoffee/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+          </li>
         <li>
-          <ul class="sp-sns-icons">
-            <li id="overlay-instagram"><a href="https://www.instagram.com/hapunacoffee/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
-          </ul>
+          <a href="" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
         </li>
       </ul>
-    </nav>
-  </div>
-  <!-- SNSリンク -->
-  <div id="sns-icons" class="sns-link">
-    <nav>
-      <ul>
-        <li><a href="https://www.instagram.com/hapunacoffee/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
-      </ul>
-    </nav>
-  </div>
-  <!-- メインコンテンツ -->
-  <div id="Main" class="Main">
-    <p>Good coffee connect peaple</p>
-  </div>
-
-  <div id="Menu" class="Menu">
-    <h1>MENU</h1>
-    <div class="Menu-Wrapper">
-      <h2>COFFEE</h2>
-      <ul>
-        <li>ドリップコーヒー (Hot/Iced)<br><p>Pour over coffee</p></li>
-        <li>カフェラテ (Hot/Iced)<br><p>Caffè e llatte</p></li>
-        <li>エスプレッソトニック (Iced)<br><p>Espresso tonic</p></li>
-      </ul>
-      <h2>OTHERS</h2>
-      <ul>
-        <li>西尾抹茶ラテ (Hot/Iced)<br><p>Nishio green tea llatte</p></li>
-        <li>西尾エスプレッソラテ (Hot/Iced)<br><p>Nishio green tea and espresso llatte</p></li>
-        <li>リンゴジュース<br><p>Apple juice</p></li>
-      </ul>
-      <h2>FOOD</h2>
-      <ul>
-        <li>バタートースト<br><p>Buttered Toast</p></li>
-        <li>チーズトースト<br><p>Cheese on Toast</p></li>
-        <li>ピザトースト<br><p>Pizza-Toast</p></li>
-        <li>ハニーバタートースト<br><p>Honey Butter Toast</p></li>
-        <li>ハニーチーズトースト<br><p>Honey Cheese Toast</p></li>
-      </ul>
+      <button class="Page-Top-Btn">
+        <a href="#"><i class="fas fa-chevron-up"></i></a>
+      </button>
     </div>
-    <div class="Menu-Nav">
-      <p>ドリップコーヒーは福岡と京都のロースターさんで焙煎されたコーヒー豆からお選びいただけます。</p>
-      <p>その他、季節のメニューやパティスリーやベイカリーのメニューを取り扱わせていただくこともございます。</p>
-    </div>
+    <p class="Copyright">©︎ 2021 Witten by HAPUNA COFFEE.</p>
   </div>
-
-  <div id="Location" class="Location-Wrapper">
-    <h1>LOCATION</h1>
-
-    <div id="map"></div>
-
-    <div class="Loc-Nav">
-      <div class="Access-Nav">
-        <p class="Margin-Area">〒464-0850<br>愛知県名古屋市千種区今池3丁目17-8</p>
-        <p>今池駅9番出口より徒歩5分</p>
-        <p>駐車場 2台</p>
-      </div>
-      
-      <div class="Opening-Nav">
-        <p class="Margin-Area">平日(火曜定休)<br>7:30〜18:00(Lo 17:30)</p>
-        <p>休日<br>9:00〜18:30(Lo 18:00)</p>
-      </div>
-    </div>
-    <div class="Loc-Img">
-      <img src="img/inside-cafe2.jpg" class="Loc-Img1">
-      <img src="img/circle_sign.jpg" class="Loc-Img2">
-    </div>
-  </div>
-  
-  <div id="About" class="About">
-    <div class="Scroll-Box1">
-      <h1>ABOUT</h1>
-      <h2>COFFEE</h2>
-      <p>福岡と京都のロースターで焙煎されたコーヒー豆を使用しています。コーヒー豆本来の味を損なわないために浅煎りの焙煎をレンジとしております。</p>
-    </div>
-    <div class="Para-BG1"></div>
-    
-    <div class="Scroll-Box2">
-      <h2>CONCEPT</h2>
-      <p>福岡と京都のロースターで焙煎されたコーヒー豆を使用しています。コーヒー豆本来の味を損なわないために浅煎りの焙煎をレンジとしております。</p>
-    </div>
-    <div class="Para-BG2"></div>
-  </div>
-
-  <script>
-    function initMap() {
-        var latlng = new google.maps.LatLng( 35.16486825912395, 136.93599237607097 );
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 17,
-          center: latlng
-        });
-        var marker = new google.maps.Marker({
-          position: latlng,
-          map: map
-        });
-      }
-</script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSrhiG2PywPcJ9ooUF__hEg-psqqD3McU&callback=initMap"></script>
-  <script src="js/main.js"></script>
+</footer>
+<script src="js/main.js"></script>
 </body>
 </html>
