@@ -210,6 +210,7 @@ img {
 }
 /* セクション共通 */
 .Section-Title-BG {
+  background: #fff;
   padding-top: 80px;
   padding-bottom: 20px;
   height: 100px;
@@ -314,6 +315,8 @@ img {
 }
 .Txt p {
   padding-top: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
   line-height: 22px;
 }
 /* メニュー */
@@ -342,7 +345,7 @@ img {
 }
 /* アクセス */
 .Access-Wrapper {
-  max-width: 1000px;
+  max-width: 800px;
   margin: 0 auto;
 }
 .Loc-Nav {
@@ -354,10 +357,49 @@ img {
   margin-top: 8px;
   margin-bottom: 8px;
 }
-/* ギャラリー */
-.Gallery img {
-  margin: 20px auto;
+.Access-Img img {
   display: block;
+}
+/* ギャラリー */
+.Gallery {
+  background: #000;
+  /* min-height: 200vh; */
+}
+.Gallery-Container {
+  display: grid;
+  grid-template:
+    ".... .... ...." 20px
+    ".... Img1 ...." auto
+    ".... .... ...." 10px
+    ".... Img2 ...." auto
+    ".... .... ...." 10px
+    ".... Img3 ...." auto
+    ".... .... ...." 10px
+    ".... Img4 ...." auto
+    ".... .... ...." 10px
+    ".... Img5 ...." auto
+    ".... .... ...." 20px/
+     minmax(20px, auto) minmax(300px, 1000px) minmax(20px, auto);
+}
+.Img1 {
+  grid-area: Img1;
+  width: 100%;
+}
+.Img2 {
+  grid-area: Img2;
+  width: 100%;
+}
+.Img3 {
+  grid-area: Img3;
+  width: 100%;
+}
+.Img4 {
+  grid-area: Img4;
+  width: 100%;
+}
+.Img5 {
+  grid-area: Img5;
+  width: 100%;
 }
 /* フッター */
 .footer-BG {
